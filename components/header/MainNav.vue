@@ -1,19 +1,18 @@
-
 <template>
-  <nav class="bg-white shadow-md">
+  <nav class="bg-white shadow-md whitespace-nowrap">
     <!-- Desktop Navigation -->
-    <div class="container mx-auto px-4 h-auto">
-      <div class="flex justify-between items-center h-16">
+    <div class="container mx-auto h-auto">
+      <div class="flex justify-center h-18 ">
         <!-- Logo -->
-        <div class="flex items-center">
-          <img src="/assests/pic/هدف_تدريب_bg_removed.png.png" alt="Logo" class="h-8" />
+        <div class=" md:mr-0 lg:ml-2 xl:ml-22">
+          <img src="/assests/pic/هدف_تدريب_bg_removed.png.png" alt="Logo" class="h-20 " />
         </div>
 
         <!-- Desktop Menu -->
 
-        <div class="hidden lg:flex items-center space-x-8 space-x-reverse">
+        <div class="hidden lg:flex items-center space-x-2">
           <div v-for="(item, index) in menuItems" :key="index" class="relative group">
-            <a href="#" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium ">
+            <a href="#" class="text-gray-700 hover:text-primary px-3 py-2 ">
               {{ item.title }}
               <span v-if="item.isNew" class="absolute top-4 left-0 text-xs text-red-500">جديد</span>
             </a>
@@ -89,13 +88,13 @@
             
 
         <!-- Auth Buttons -->
-        <div class="hidden lg:flex items-center space-x-4 space-x-reverse">
-          <button class="rounded-full bg-[#277b9d] text-white hover:bg-[#15293F] transition-colors m-2 p-2">إنشاء حساب</button>
-          <button class="rounded-full border border-[#1E3A5F] text-[#1E3A5F] hover:bg-[#277b9d] hover:text-white m-2 p-2">تسجيل الدخول</button>
+        <div class="hidden lg:flex p-4 space-x-2 w-auto font-semibold">
+          <button class="rounded-full bg-[#277b9d] text-white hover:bg-[#15293F] transition-colors pr-5 pl-5 mr-30 whitespace-nowrap">إنشاء حساب</button>
+          <button class="rounded-full border border-[#277b9d] text-[#277b9d] hover:bg-[#277b9d] hover:text-white pr-5 pl-5 whitespace-nowrap">تسجيل الدخول</button>
         </div>
 
         <!-- Mobile Menu Button -->
-        <div class="lg:hidden">
+        <div class="lg:hidden flex mr-auto">
           <button @click="toggleMenu" class="text-gray-600 hover:text-gray-900">
             <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path v-if="!isMenuOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -186,5 +185,10 @@ const secondaryMenuItems = [
 <style scoped>
 a:hover + .hover-target {
 display: block;
+}
+
+
+nav{
+    font-family:  Arial, Tahoma, sans-serif;
 }
 </style>

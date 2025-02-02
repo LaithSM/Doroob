@@ -22,7 +22,7 @@
                        bg-[#318720] hover:bg-[#45a049]
                        md:bg-[#4CAF50] md:hover:bg-[#45a049] md:-skew-x-20"
               >
-                <UserIcon class="h-4 w-4 ml-1" />
+                <img class="h-4 w-4 ml-1" src="../../assests/pic/person.png"/>
                 الافراد
               </button>
               <button
@@ -30,7 +30,7 @@
                        bg-[#1c3050] hover:bg-[#4CAF50]
                        md:bg-[#33598b] md:hover:bg-[#4CAF50] md:-skew-x-20"
               >
-                <BriefcaseBusinessIcon class="h-4 w-4 ml-1" />
+                <img class="h-4 w-4 ml-1" src="../../assests/pic/suitCase.png" />
                 المنشات
               </button>
             </div>
@@ -42,5 +42,4 @@
 </template>
 
 <script setup>
-import { UserIcon, BriefcaseBusinessIcon } from "lucide-vue-next";
 </script>
