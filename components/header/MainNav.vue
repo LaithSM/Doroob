@@ -24,9 +24,9 @@
       v-if="item.title === 'المسارات التدريبية'" 
       class="absolute right-3 top-9 mt-2  bg-white shadow-lg  hidden group-hover:block  z-20 gap-4 text-right mx-auto"
     >
-      <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">مسارات التدريب</a>
-      <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">مسارات التوطين</a>
-      <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">مسارات القطاعات</a>
+      <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:text-[#277b9d]">مسارات التدريب</a>
+      <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:text-[#277b9d]">مسارات التوطين</a>
+      <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:text-[#277b9d]">مسارات القطاعات</a>
     </div>
               <div 
       v-if="item.title === 'الدورات التدريبية'" 
@@ -39,47 +39,47 @@
   <div class="space-y-2">
   <ul class="space-y-2">
     <li>
-      <a href="#" class="block">إدارة الاعمال</a>
+      <a href="#" class="block hover:text-[#277b9d]">إدارة الاعمال</a>
     </li>
     <li>
-      <a href="#">اللغات</a>
+      <a href="#" class="hover:text-[#277b9d]">اللغات</a>
     </li>
     <li>
-      <a href="#">المالية والمحاسبة</a>
+      <a href="#" class="hover:text-[#277b9d]">المالية والمحاسبة</a>
     </li>
     <li>
-      <a href="#" class="block">البيانات و التحليلات</a>
+      <a href="#" class="block hover:text-[#277b9d]">البيانات و التحليلات</a>
     </li>
   </ul>
 </div>
 
   <!-- Column 2 -->
   <div class="space-y-2">
-    <a href="#" class="block ">
+    <a href="#" class="block hover:text-[#277b9d]">
       التقنية و علوم الحاسب الآلي
     </a>
-    <a href="#" class="block ">
+    <a href="#" class="block hover:text-[#277b9d]">
       الفنون والعلوم الانسانية
     </a>
-    <a href="#" class="block ">
+    <a href="#" class="block hover:text-[#277b9d]">
       المهارات الوظيفية
     </a>
-    <a href="#" class="block ">
+    <a href="#" class="block hover:text-[#277b9d]">
       مهارات تطوير الذات
     </a>
   </div>
 
   <!-- Column 3 -->
   <div class="space-y-2">
-    <a href="#" class="block ">
+    <a href="#" class="block hover:text-[#277b9d]">
       الصحة
     </a>
-    <a href="#" class="block ">
+    <a href="#" class="block hover:text-[#277b9d]">
       السياحة والترفيه
     </a>
-    <a href="#" class="block items-center justify-between text-[#428bca] font-medium text-base">
-      <span>جميع التخصصات</span>
-      <span class="text-lg">›</span>
+    <a href="#" class="block items-center justify-between text-[#428bca] font-medium text-sm">
+      <span class="font-bold">جميع التخصصات</span>
+      <span class="text-lg mr-1">›</span>
     </a>
   </div>
 </div>
