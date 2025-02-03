@@ -23,15 +23,17 @@
                        md:bg-[#4CAF50] md:hover:bg-[#45a049] md:-skew-x-20"
               >
                 <img class="h-4 w-4 ml-1" src="../../assests/pic/person.png"/>
+               <div class="md:skew-x-20">
                 الافراد
+               </div>
               </button>
               <button
                 class="flex-1 md:flex-initial text-sm inline-flex items-center justify-center px-4
                        bg-[#1c3050] hover:bg-[#4CAF50]
-                       md:bg-[#33598b] md:hover:bg-[#4CAF50] md:-skew-x-20"
+                       md:bg-[#33598b] md:hover:bg-[#4CAF50] md:-skew-x-20 font-bold"
               >
                 <img class="h-4 w-4 ml-1" src="../../assests/pic/suitCase.png" />
-                المنشات
+                <div class="md:skew-x-20">المنشات</div>
               </button>
             </div>
           </div>
