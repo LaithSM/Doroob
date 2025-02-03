@@ -10,16 +10,19 @@
 
         <!-- Desktop Menu -->
 
-        <div class="hidden lg:flex items-center space-x-2">
+        <div class="hidden lg:flex items-center space-x-4">
           <div v-for="(item, index) in menuItems" :key="index" class="relative group whitespace-nowrap">
-            <a href="#" class="text-gray-700 hover:text-primary px-3 py-2 ">
+          <div class="text-gray-700 hover:text-primary px-3 py-2 ">
+            <a href="#" >
               {{ item.title }}
-              <span v-if="item.isNew" class="absolute top-4 left-0 text-xs text-red-500">جديد</span>
+              <span v-if="item.isNew" class=" mr-1 absolute top-4 text-xs text-red-500 font-serif">جديد</span>
+              <span v-if="!item.isNew" class=" mr-1 absolute top-4.5 text-[8px]  text-grey-900 font-serif">▼</span>
             </a>
+          </div>
               <div class="hidden group-hover:block before:absolute before:top-10 before:left-4 before:right-3 before:h-1 before:bg-green-500"></div>
               <div 
       v-if="item.title === 'المسارات التدريبية'" 
-      class="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md hidden group-hover:block top-10 z-20"
+      class="absolute right-3 top-9 mt-2  bg-white shadow-lg  hidden group-hover:block  z-20 gap-4 text-right mx-auto"
     >
       <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">مسارات التدريب</a>
       <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">مسارات التوطين</a>
@@ -88,9 +91,9 @@
             
 
         <!-- Auth Buttons -->
-        <div class="hidden lg:flex p-4 space-x-2 w-auto font-semibold">
-          <button class="rounded-full bg-[#277b9d] text-white hover:bg-[#15293F] transition-colors pr-5 pl-5 mr-30 whitespace-nowrap">إنشاء حساب</button>
-          <button class="rounded-full border border-[#277b9d] text-[#277b9d] hover:bg-[#277b9d] hover:text-white pr-5 pl-5 whitespace-nowrap">تسجيل الدخول</button>
+        <div class="hidden lg:flex p-4 space-x-2 w-auto text-sm">
+          <button class="rounded-full bg-[#277b9d] text-white hover:bg-[#15293F] transition-colors pr-5 pl-5 mr-30 whitespace-nowrap ">إنشاء حساب</button>
+          <button class="rounded-full border border-[#277b9d] text-[#277b9d] hover:bg-[#277b9d] hover:text-white pr-5 pl-5 whitespace-nowrap ">تسجيل الدخول</button>
         </div>
 
         <!-- Mobile Menu Button -->
@@ -156,8 +159,6 @@
 
 <script setup >
 import { ref } from 'vue';
-import { InstagramIcon, TwitterIcon, LinkedinIcon } from 'lucide-vue-next'
-
 
 const isMenuOpen = ref(false);
 
@@ -183,13 +184,14 @@ const secondaryMenuItems = [
 </script>
 
 <style scoped>
+@import url('../../assests/css/fonts.css');
+
 a:hover + .hover-target {
 display: block;
 }
 
 nav{
-    font-family:  Arial, Tahoma, sans-serif;
+  font-family: "Doroob", "Doroob SSTArabic Roman", Tahoma, sans-serif;
 }
-
 
 </style>

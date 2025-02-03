@@ -1,0 +1,16 @@
+/* Berthold Akzidenz Grotesk BE Regular */
+@font-face {
+    font-family: 'Doroob';
+    src: url('../../assests/fonts/Berthold\ Akzidenz\ Grotesk\ BE\ Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* Font Awesome */
+  @font-face {
+    font-family: 'Doroob SSTArabic Roman';
+    src: url('../../assests/fonts/fontawesome-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  

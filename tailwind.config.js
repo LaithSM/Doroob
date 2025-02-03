@@ -1,4 +1,8 @@
 module.exports = {
+    content: [
+        "./index.html",
+        "./src/**/*.{vue,js,ts,jsx,tsx}",
+      ],
     theme: {
         extend: {
             colors: {
@@ -13,6 +17,7 @@ module.exports = {
                 serif: ['Georgia', 'Cambria', 'serif'],
                 mono: ['SFMono-Regular', 'Menlo', 'monospace'],
                 doroob: ["Doroob SSTArabic Roman", "sans-serif"],
+                'akzidenz': ['Berthold Akzidenz Grotesk BE Regular', 'sans-serif'],  // Add your font here
             },
         },
     },
