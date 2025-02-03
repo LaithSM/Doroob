@@ -1,5 +1,5 @@
 <template>
-  <nav class="bg-white shadow-md whitespace-nowrap">
+  <nav class="bg-white shadow-md ">
     <!-- Desktop Navigation -->
     <div class="container mx-auto h-auto">
       <div class="flex justify-center h-18 ">
@@ -11,7 +11,7 @@
         <!-- Desktop Menu -->
 
         <div class="hidden lg:flex items-center space-x-2">
-          <div v-for="(item, index) in menuItems" :key="index" class="relative group">
+          <div v-for="(item, index) in menuItems" :key="index" class="relative group whitespace-nowrap">
             <a href="#" class="text-gray-700 hover:text-primary px-3 py-2 ">
               {{ item.title }}
               <span v-if="item.isNew" class="absolute top-4 left-0 text-xs text-red-500">جديد</span>
@@ -112,39 +112,39 @@
          
 
  <!-- Mobile Auth Buttons -->
- <div class="mt-8 space-y-4">
+ <div class="mt-8 space-y-2.5">
               <button class="text-[#247190] w-full border border-gray-300 px-4 py-2 rounded-full">إنشاء حساب</button>
               <button class="text-[#247190] w-full border border-gray-300 px-4 py-2 rounded-full ">تسجيل الدخول</button>
             </div>
 
           <!-- Mobile Menu Items -->
-          <div class="space-y-4">
+          <div class="space-y-2" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
             <div v-for="(item, index) in menuItems" :key="index" class="relative">
               <a href="#" class="block text-gray-700 hover:text-primary py-2 text-right">
                 {{ item.title }}
-                <span v-if="item.isNew" class="text-xs text-red-500 mr-2">جديد</span>
+                <span v-if="item.isNew" class="text-xs text-red-500">جديد</span>
               </a>
               <hr class="text-gray-400 font-light" />
             </div>
 
             <!-- Secondary Menu Items -->
             <div v-for="(item, index) in secondaryMenuItems" :key="'secondary-'+index">
-              <a href="#" class="block text-gray-600 hover:text-primary py-2 text-right">
+              <a href="#" class="block text-gray-600 hover:text-primary py-2 text-right"> 
                 {{ item }}
               </a>
               <hr class="text-gray-400 font-light" />
             </div>
 
           </div>
-          <div class="flex items-center justify-center md:justify-start gap-4 flex-row-reverse py-10">
-          <a href="#" class="text-gray-500 hover:text-gray-700">
-            <InstagramIcon class="h-5 w-5" />
+          <div class="flex  justify-center  gap-4 flex-row-reverse py-10">
+          <a href="#">
+            <img  src="../../assests/pic/instagramIcon.png" />
+          </a>
+          <a href="#" class="text-gray-500">
+            <img src="../../assests/pic/twitter.png" />
           </a>
           <a href="#" class="text-gray-500 hover:text-gray-700">
-            <TwitterIcon class="h-5 w-5" />
-          </a>
-          <a href="#" class="text-gray-500 hover:text-gray-700">
-            <LinkedinIcon class="h-5 w-5" />
+            <img src="../../assests/pic/linkedinIcon.png" />
           </a>
         </div>
         </div>
@@ -187,8 +187,9 @@ a:hover + .hover-target {
 display: block;
 }
 
-
 nav{
     font-family:  Arial, Tahoma, sans-serif;
 }
+
+
 </style>

@@ -2,8 +2,8 @@
   <!-- Gradient Line -->
   <div class="h-1 bg-gradient-to-l from-[#FF6B4D] to-[#A0522D]"></div>
   
-  <footer class="bg-[#F5F5F5] text-[#666] py-8">
-    <div class="container mx-auto px-4">
+  <footer class="bg-[#eaeaea] text-[#666] py-8">
+    <div class="container mx-auto">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-right">
         <!-- Logo and Copyright Section -->
         <div class="flex flex-col sm:items-center">
@@ -41,18 +41,18 @@
         </div>
 
         <!-- Social Media Section -->
-        <div class="hidden lg:flex  lg:items-center"> 
-  <div class="flex items-center gap-4 flex-row-reverse">
-    <a href="#" class="text-gray-500 hover:text-gray-700 transition-colors">
-      <InstagramIcon class="h-5 w-5" />
-    </a>
-    <a href="#" class="text-gray-500 hover:text-gray-700 transition-colors">
-      <TwitterIcon class="h-5 w-5" />
-    </a>
-    <a href="#" class="text-gray-500 hover:text-gray-700 transition-colors">
-      <LinkedinIcon class="h-5 w-5" />
-    </a>
-  </div>
+        <div class="hidden lg:flex "> 
+          <div class="flex flex-row-reverse">
+          <a href="#">
+            <img  src="../assests/pic/instaFooterIcon.png" />
+          </a>
+          <a href="#" class="text-gray-500">
+            <img src="../assests/pic/twitterFotterIcon.png" />
+          </a>
+          <a href="#" class="text-gray-500 hover:text-gray-700 my-1">
+            <img src="../assests/pic/linkedFooterIcon.png" />
+          </a>
+        </div>
 </div>
       </div>
 
@@ -61,7 +61,6 @@
 </template>
 
 <script setup lang="ts">
-import { InstagramIcon, TwitterIcon, LinkedinIcon } from 'lucide-vue-next'
 </script>
 
 <style scoped>
