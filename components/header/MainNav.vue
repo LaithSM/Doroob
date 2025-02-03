@@ -10,7 +10,7 @@
 
         <!-- Desktop Menu -->
 
-        <div class="hidden lg:flex items-center space-x-4">
+        <div class="hidden lg:hidden xl:flex items-center space-x-4">
           <div v-for="(item, index) in menuItems" :key="index" class="relative group whitespace-nowrap">
           <div class="text-gray-700 hover:text-primary px-3 py-2 ">
             <a href="#" >
@@ -91,13 +91,13 @@
             
 
         <!-- Auth Buttons -->
-        <div class="hidden lg:flex p-4 space-x-2 w-auto text-sm">
+        <div class="hidden lg:hidden xl:flex p-4 space-x-2 w-auto text-sm">
           <button class="rounded-full bg-[#277b9d] text-white hover:bg-[#15293F] transition-colors pr-5 pl-5 mr-30 whitespace-nowrap ">إنشاء حساب</button>
           <button class="rounded-full border border-[#277b9d] text-[#277b9d] hover:bg-[#277b9d] hover:text-white pr-5 pl-5 whitespace-nowrap ">تسجيل الدخول</button>
         </div>
 
         <!-- Mobile Menu Button -->
-        <div class="lg:hidden flex mr-auto">
+        <div class="lg:flex xl:hidden flex mr-auto">
           <button @click="toggleMenu" class="text-gray-600 hover:text-gray-900">
             <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path v-if="!isMenuOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
