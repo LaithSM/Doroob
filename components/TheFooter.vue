@@ -5,10 +5,10 @@
   <footer class="bg-[#eaeaea] text-[#666] py-10">
     <div class="container mx-auto">
       <div
-        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-right -ml-15 mr-15"
+        class="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 gap-8 text-right -ml-15 mr-15"
       >
         <!-- Logo and Copyright Section -->
-        <div class="flex flex-col sm:item-center mx-15">
+        <div class="flex flex-col  sm:item-center mx-15">
           <a href="http://www.hrdf.org.sa/" class="block">
             <img
               src="../assests/pic/footer-logo-hrdf.png"
@@ -16,9 +16,9 @@
               class="h-16 md:h-20 object-contain"
             />
           </a>
-          <div class="text-sm">
-            <p>جميع الحقوق محفوظة © برنامج التدريب</p>
-            <p>الإلكتروني 2025</p>
+          <div class="text-sm  lg:whitespace-normal md:whitespace-nowrap">
+            <p class="md:inline">جميع الحقوق محفوظة © برنامج التدريب</p>
+            <p class="md:inline">الإلكتروني 2025</p>
             <ul class="space-y-1 mt-4">
               <li>
                 <a href="#" class="hover:text-black transition-colors">الشروط والأحكام</a>
@@ -31,7 +31,7 @@
         </div>
 
         <!-- Description Section -->
-        <div class="hidden lg:flex text-sm leading-relaxed flex-col space-y-1">
+        <div class="hidden lg:flex text-sm leading-relaxed flex-col space-y-1 md:whitespace-nowrap md:-mx-10">
           <p>برنامج التدريب الإلكتروني هو برنامج مقدم من</p>
           <p>صندوق تنمية الموارد البشرية ويهدف لتطوير</p>
           <p>المعارف والمهارات لدى الكوادر الوطنية وتمكينهم</p>
