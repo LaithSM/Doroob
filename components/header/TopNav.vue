@@ -10,7 +10,7 @@
           <a href="#" class="text-sm hover:text-green-600">التدريب الإلكتروني</a>
           <a href="#" class="text-sm hover:text-green-600">تحقق</a>
           <a href="#" class="text-sm hover:text-green-600">الأسئلة الشائعة</a>
-          <a href="#" class="text-sm hover:text-green-600">اتصل بنا</a>
+          <a href="#" class="text-sm hover:text-green-600 ml-4">اتصل بنا</a>
           <a href="#" class="text-sm hover:text-green-600">دليل المستخدم</a>
         </div>
 
@@ -20,20 +20,22 @@
               <button
                 class="flex-1 md:flex-initial text-white inline-flex items-center justify-center px-4 font-bold
                        bg-[#318720] hover:bg-[#45a049]
-                       md:bg-[#4CAF50] md:hover:bg-[#45a049] md:-skew-x-20"
+                       md:bg-[#4CAF50] md:hover:bg-[#45a049] md:-skew-x-40"
               >
-                <img class="h-4 w-4 ml-1" src="../../assests/pic/person.png"/>
-               <div class="md:skew-x-20">
+               <div class="flex md:skew-x-40">
+                <img class="h-4 w-4 ml-1 mt-1" src="../../assests/pic/person.png"/>
                 الافراد
                </div>
               </button>
               <button
                 class="flex-1 md:flex-initial text-sm inline-flex items-center justify-center px-4
                        bg-[#1c3050] hover:bg-[#4CAF50]
-                       md:bg-[#33598b] md:hover:bg-[#4CAF50] md:-skew-x-20 font-bold"
+                       md:bg-[#33598b] md:hover:bg-[#4CAF50] md:-skew-x-40 font-bold"
               >
+                <div class="flex md:skew-x-40">
                 <img class="h-4 w-4 ml-1" src="../../assests/pic/suitCase.png" />
-                <div class="md:skew-x-20">المنشات</div>
+                المنشآت
+                </div>
               </button>
             </div>
           </div>
