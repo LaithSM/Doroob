@@ -5,17 +5,19 @@
   <footer class="bg-[#eaeaea] text-[#666] py-10">
     <div class="container mx-auto">
       <div
-        class="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 gap-8 text-right -ml-15 mr-15"
+        class="grid grid-cols-1  md:grid-cols-1 lg:grid-cols-4 gap-8 text-right -ml-0 mr-0 md:-ml-15 md:mr-15"
       >
         <!-- Logo and Copyright Section -->
-        <div class="flex flex-col  sm:item-center mx-15">
+        <div class="flex flex-col text-center md:text-right mx-15">
+        <div class="">
           <a href="http://www.hrdf.org.sa/" class="block">
             <img
               src="../assests/pic/footer-logo-hrdf.png"
               alt="Doroob"
-              class="h-16 md:h-20 object-contain"
+              class="h-16 md:h-20 object-contain inline"
             />
           </a>
+        </div>
           <div class="text-sm  lg:whitespace-normal md:whitespace-nowrap">
             <p class="md:inline">جميع الحقوق محفوظة © برنامج التدريب</p>
             <p class="md:inline">الإلكتروني 2025</p>
