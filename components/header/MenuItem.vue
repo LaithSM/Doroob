@@ -7,7 +7,7 @@
       class="block text-gray-700 hover:text-primary py-2 text-right"
     >
       {{ item.title }}
-      <span v-if="item.isNew" class="text-xs text-red-500">جديد</span>
+      <span v-if="item.isNew" class="text-[10px] text-red-500">جديد</span>
       <span
         v-if="
           (!item.isNew && item.title === 'المسارات التدريبية') ||

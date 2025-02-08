@@ -127,29 +127,15 @@
         <!-- Mobile Menu Button -->
         <div class="lg:flex xl:hidden flex mr-auto">
           <button @click="toggleMenu" class="text-gray-600 hover:text-gray-900">
-            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path
-                v-if="!isMenuOpen"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-              <path
-                v-else
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
+         <x v-if="!isMenuOpen" class="stroke-4"/>
+         <Menu v-else class="stroke-3"/>
           </button>
         </div>
       </div>
     </div>
 
     <!-- Mobile Menu -->
-    <div v-if="isMenuOpen" class="lg:hidden">
+    <div v-if="isMenuOpen" class="lg:hidden font-medium">
       <div class="fixed inset-0 bg-white z-50 top-50">
         <div class="p-4">
           <!-- Mobile Auth Buttons -->
@@ -168,9 +154,7 @@
 
           <!-- Mobile Menu Items -->
           <div
-            class="space-y-2"
-            style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"
-          >
+            class="space-y-2">
             <MenuItem
               v-for="(item, index) in menuItems"
               :key="index"
@@ -208,6 +192,8 @@
 <script setup>
 import { ref } from "vue";
 import MenuItem from "./MenuItem.vue";
+import { X } from 'lucide-vue-next';
+import { Menu } from 'lucide-vue-next';
 
 const isMenuOpen = ref(false);
 const activeIndex = ref(null);
@@ -252,6 +238,6 @@ a:hover + .hover-target {
 }
 
 nav {
-  font-family: "Doroob", "Doroob SSTArabic Roman", Tahoma, sans-serif;
+   font-family:'Tajawal', sans-serif;
 }
 </style>

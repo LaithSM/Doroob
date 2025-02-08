@@ -4,14 +4,14 @@
       <div class="flex justify-center items-center space-x-10 lg:px-20 lg:mr-80">
         <div
           id="right_side_links"
-          class="hidden md:flex items-center space-x-6 space-x-reverse text-left whitespace-nowrap"
+          class="hidden md:flex items-center space-x-6 space-x-reverse text-left text-xs font-medium whitespace-pre" style="font-family:'Tajawal', sans-serif"
         >
-          <a href="#" class="text-sm hover:text-green-600">الصفحة الرئيسية</a>
-          <a href="#" class="text-sm hover:text-green-600">التدريب الإلكتروني</a>
-          <a href="#" class="text-sm hover:text-green-600">تحقق</a>
-          <a href="#" class="text-sm hover:text-green-600">الأسئلة الشائعة</a>
-          <a href="#" class="text-sm hover:text-green-600 ml-4">اتصل بنا</a>
-          <a href="#" class="text-sm hover:text-green-600">دليل المستخدم</a>
+          <a href="#" class=" hover:text-green-600">الصفحة الرئيسية</a>
+          <a href="#" class=" hover:text-green-600">التدريب الإلكتروني</a>
+          <a href="#" class=" hover:text-green-600">تحقق</a>
+          <a href="#" class=" hover:text-green-600">الأسئلة الشائعة</a>
+          <a href="#" class=" hover:text-green-600 ml-4">اتصل بنا</a>
+          <a href="#" class=" hover:text-green-600">دليل المستخدم</a>
         </div>
 
         <div id="left_side_items" class="w-full md:w-auto flex">
