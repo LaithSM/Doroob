@@ -12,7 +12,7 @@
         <div class="">
           <a href="http://www.hrdf.org.sa/" class="block">
             <img
-              src="../assests/pic/footer-logo-hrdf.png"
+              src="../assets/pic/footer-logo-hrdf.png"
               alt="Doroob"
               class="h-16 md:h-20 object-contain inline"
             />
@@ -62,13 +62,13 @@
         <div class="hidden lg:flex -mx-20 mt-4">
           <div class="flex flex-row-reverse">
             <a href="#">
-              <img src="../assests/pic/instaFooterIcon.png" />
+              <img src="../assets/pic/instaFooterIcon.png" />
             </a>
             <a href="#" class="text-gray-500">
-              <img src="../assests/pic/twitterFotterIcon.png" />
+              <img src="../assets/pic/twitterFotterIcon.png" />
             </a>
             <a href="#" class="text-gray-500 hover:text-gray-700 my-1">
-              <img src="../assests/pic/linkedFooterIcon.png" />
+              <img src="../assets/pic/linkedFooterIcon.png" />
             </a>
           </div>
         </div>

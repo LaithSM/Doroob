@@ -14,7 +14,7 @@
   .title-banner {
     padding: 16px 0;
     background-color: #163151;
-    background: url(../../assests/pic/title-banner-bg.jpg);
+    background: url(../../assets/pic/title-banner-bg.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;

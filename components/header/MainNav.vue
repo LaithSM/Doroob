@@ -5,7 +5,7 @@
       <div class="flex justify-center h-18">
         <!-- Logo -->
         <div class="md:mr-0 lg:ml-2 xl:ml-22">
-          <img src="/assests/pic/هدف_تدريب_bg_removed.png.png" alt="Logo" class="h-20" />
+          <img src="/assets/pic/هدف_تدريب_bg_removed.png.png" alt="Logo" class="h-20" />
         </div>
 
         <!-- Desktop Menu -->
@@ -21,12 +21,12 @@
                 {{ item.title }}
                 <span
                   v-if="item.isNew"
-                  class="mr-1 absolute top-4 text-xs text-red-500 font-serif"
+                  class="mr-1 absolute top-4 text-[10px] font-medium text-red-500"
                   >جديد</span
                 >
                 <span
                   v-if="!item.isNew"
-                  class="mr-1 absolute top-4.5 text-[8px] text-grey-900 font-serif"
+                  class="mr-1 absolute top-4.5 text-[8px] text-grey-900"
                   >▼</span
                 >
               </a>
@@ -174,13 +174,13 @@
           </div>
           <div class="flex justify-center gap-4 flex-row-reverse py-10">
             <a href="#">
-              <img src="../../assests/pic/instagramIcon.png" />
+              <img src="../../assets/pic/instagramIcon.png" />
             </a>
             <a href="#" class="text-gray-500">
-              <img src="../../assests/pic/twitter.png" />
+              <img src="../../assets/pic/twitter.png" />
             </a>
             <a href="#" class="text-gray-500 hover:text-gray-700">
-              <img src="../../assests/pic/linkedinIcon.png" />
+              <img src="../../assets/pic/linkedinIcon.png" />
             </a>
           </div>
         </div>
@@ -231,8 +231,6 @@ const secondaryMenuItems = [
 </script>
 
 <style scoped>
-@import url("../../assests/css/fonts.css");
-
 a:hover + .hover-target {
   display: block;
 }

@@ -23,7 +23,7 @@
                        md:bg-[#4CAF50] md:hover:bg-[#45a049] md:-skew-x-40 md:pr-6"
               >
                <div class="flex md:skew-x-40">
-                <img class="h-4 w-4 ml-1 mt-1" src="../../assests/pic/person.png"/>
+                <img class="h-4 w-4 ml-1 mt-1" src="../../assets/pic/person.png"/>
                 الافراد
                </div>
               </button>
@@ -33,7 +33,7 @@
                        md:bg-[#23395f] md:hover:bg-[#4CAF50] md:-skew-x-40 font-bold"
               >
                 <div class="flex md:skew-x-40">
-                <img class="h-4 w-4 ml-1" src="../../assests/pic/suitCase.png" />
+                <img class="h-4 w-4 ml-1" src="../../assets/pic/suitCase.png" />
                 المنشآت
                 </div>
               </button>
