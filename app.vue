@@ -2,7 +2,7 @@
   <div dir="rtl" class="min-h-screen flex flex-col">
     <TheHeader />
     <main class="flex-grow">
-      <!-- Main content goes here -->
+      <NuxtPage />
     </main>
     <TheFooter />
   </div>
