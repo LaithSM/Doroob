@@ -20,12 +20,12 @@
               <a href="#">
                 {{ item.title }}
                 <span
-                  v-if="item.isNew"
+                  v-if="!item.isNew"
                   class="mr-1 absolute top-4 text-[10px] font-medium text-red-500"
                   >جديد</span
                 >
                 <span
-                  v-if="!item.isNew"
+                  v-else
                   class="mr-1 absolute top-4.5 text-[8px] text-grey-900"
                   >▼</span
                 >
