@@ -17,7 +17,7 @@
             class="relative group whitespace-nowrap"
           >
             <div class="text-gray-700 hover:text-primary px-3 py-2">
-              <a href="#">
+              <a  :href="item.href">
                 {{ item.title }}
                 <span
                   v-if="!item.isNew"
@@ -37,17 +37,17 @@
               class="absolute right-3 top-9 mt-2 bg-white shadow-lg hidden group-hover:block z-20 gap-4 text-right mx-auto"
             >
               <a
-                href="#"
+                href="/ar/individuals/public/public_programs_list/"
                 class="block px-4 py-2 text-sm text-gray-700 hover:text-[#277b9d]"
                 >مسارات التدريب</a
               >
               <a
-                href="#"
+                href="/individuals/tawteen/tawteen_program_list/"
                 class="block px-4 py-2 text-sm text-gray-700 hover:text-[#277b9d]"
                 >مسارات التوطين</a
               >
               <a
-                href="#"
+                href="/ar/individuals/sector/sectors_program_list/0"
                 class="block px-4 py-2 text-sm text-gray-700 hover:text-[#277b9d]"
                 >مسارات القطاعات</a
               >
@@ -63,16 +63,16 @@
                 <div class="space-y-2">
                   <ul class="space-y-2">
                     <li>
-                      <a href="#" class="block hover:text-[#277b9d]">إدارة الاعمال</a>
+                      <a href="/ar/individuals/elearning/?category=إدارة%20الاعمال" class="block hover:text-[#277b9d]">إدارة الاعمال</a>
                     </li>
                     <li>
-                      <a href="#" class="hover:text-[#277b9d]">اللغات</a>
+                      <a href="/ar/individuals/elearning/?category=اللغات" class="hover:text-[#277b9d]">اللغات</a>
                     </li>
                     <li>
-                      <a href="#" class="hover:text-[#277b9d]">المالية والمحاسبة</a>
+                      <a href="/ar/individuals/elearning/?category=المالية%20والمحاسبة" class="hover:text-[#277b9d]">المالية والمحاسبة</a>
                     </li>
                     <li>
-                      <a href="#" class="block hover:text-[#277b9d]"
+                      <a href="/ar/individuals/elearning/?category=البيانات%20و%20الإحصاءات" class="block hover:text-[#277b9d]"
                         >البيانات و التحليلات</a
                       >
                     </li>
@@ -81,22 +81,22 @@
 
                 <!-- Column 2 -->
                 <div class="space-y-2">
-                  <a href="#" class="block hover:text-[#277b9d]">
+                  <a href="/ar/individuals/elearning/?category=التقنية%20و%20علوم%20الحاسب%20الالي" class="block hover:text-[#277b9d]">
                     التقنية و علوم الحاسب الآلي
                   </a>
-                  <a href="#" class="block hover:text-[#277b9d]">
+                  <a href="/ar/individuals/elearning/?category=الفنون%20والعلوم%20الانسانية" class="block hover:text-[#277b9d]">
                     الفنون والعلوم الانسانية
                   </a>
-                  <a href="#" class="block hover:text-[#277b9d]"> المهارات الوظيفية </a>
-                  <a href="#" class="block hover:text-[#277b9d]"> مهارات تطوير الذات </a>
+                  <a href="/ar/individuals/elearning/?category=المهارات%20الوظيفية" class="block hover:text-[#277b9d]"> المهارات الوظيفية </a>
+                  <a href="/ar/individuals/elearning/?category=مهارات%20تطوير%20الذات" class="block hover:text-[#277b9d]"> مهارات تطوير الذات </a>
                 </div>
 
                 <!-- Column 3 -->
                 <div class="space-y-2">
-                  <a href="#" class="block hover:text-[#277b9d]"> الصحة </a>
-                  <a href="#" class="block hover:text-[#277b9d]"> السياحة والترفيه </a>
+                  <a href="/ar/individuals/elearning/?category=الصحة" class="block hover:text-[#277b9d]"> الصحة </a>
+                  <a href="/ar/individuals/elearning/?category=السياحة%20والترفيه" class="block hover:text-[#277b9d]"> السياحة والترفيه </a>
                   <a
-                    href="#"
+                    href="/ar/individuals/elearning/"
                     class="block items-center justify-between text-[#428bca] font-medium text-sm"
                   >
                     <span class="font-bold">جميع التخصصات</span>
@@ -240,6 +240,7 @@
               :index="index"
               :activeIndex="activeIndex"
               :setActive="setActive"
+              :href="item.href"
             />
             <MenuItem
               v-for="(item, index) in secondaryMenuItems"
@@ -248,6 +249,7 @@
               :index="index"
               :activeIndex="activeSecondaryIndex"
               :setActive="setActiveSecondary"
+              :href="item.href"
             />
           </div>
           <div class="flex justify-center gap-4 flex-row-reverse py-10">
@@ -295,19 +297,19 @@ const setActiveSecondary = (index) => {
 };
 
 const menuItems = [
-  { title: "الدورات التدريبية", isNew: false },
-  { title: "الجلسات", isNew: true },
-  { title: "المسارات التدريبية", isNew: false },
-  { title: "دورات الشركاء", isNew: true },
-  { title: "البرامج المدعومة", isNew: true },
+  { title: "الدورات التدريبية", isNew: false , href: "/ar/individuals/elearning/"},
+  { title: "الجلسات", isNew: true ,href: "/ar/doroob_webinar/" },
+  { title: "المسارات التدريبية", isNew: false , href: "#" },
+  { title: "دورات الشركاء", isNew: true , href: "/ar/individuals/partners" },
+  { title: "البرامج المدعومة", isNew: true , href: "/ar/individuals/trainingProgram/programs_list/" },
 ];
 
 const secondaryMenuItems = [
-  { title: "عن التدريب الإلكتروني" },
-  { title: "تحقق" },
-  { title: "الأسئلة الشائعة" },
-  { title: "إتصل بنا" },
-  { title: "دليل المستخدم" },
+  { title: "عن التدريب الإلكتروني", href: "/ar/individuals/about/" },
+  { title: "تحقق", href: "/ar/individuals/check_certificate/" },
+  { title: "الأسئلة الشائعة", href: "/ar/individuals/faqs/" },
+  { title: "إتصل بنا", href: "https://www.hrdf.org.sa/help-support/contact-us-dashboard/" },
+  { title: "دليل المستخدم", href: "/static/media/user_manuals/indi_manual_n01AdYo.pdf" },
 ];
 
 // Mock user data (Replace later with API)

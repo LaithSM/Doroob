@@ -23,10 +23,10 @@
             <p class="md:inline">الإلكتروني 2025</p>
             <ul class="space-y-1 mt-4">
               <li>
-                <a href="#" class="hover:text-black transition-colors">الشروط والأحكام</a>
+                <a href="/ar/individuals/terms-of-use/" class="hover:text-black transition-colors">الشروط والأحكام</a>
               </li>
               <li>
-                <a href="#" class="hover:text-black transition-colors">سياسة الخصوصية</a>
+                <a href="/ar/individuals/privacy-policy/" class="hover:text-black transition-colors">سياسة الخصوصية</a>
               </li>
             </ul>
           </div>
@@ -45,15 +45,15 @@
           <h2 class="text-lg font-bold">روابط سريعة</h2>
           <ul class="text-sm">
             <li>
-              <a href="#" class="hover:text-black transition-colors"
+              <a href="/ar/individuals/about/" class="hover:text-black transition-colors"
                 >عن التدريب الإلكتروني</a
               >
             </li>
-            <li><a href="#" class="hover:text-black transition-colors">إنشاء حساب</a></li>
-            <li><a href="#" class="hover:text-black transition-colors">تحقق</a></li>
-            <li><a href="#" class="hover:text-black transition-colors">اتصل بنا</a></li>
+            <li><a href="https://www.iam.gov.sa/authservice/userauthservice?lang=ar" class="hover:text-black transition-colors">إنشاء حساب</a></li>
+            <li><a href="/ar/individuals/check_certificate/" class="hover:text-black transition-colors">تحقق</a></li>
+            <li><a href="https://www.hrdf.org.sa/help-support/contact-us-dashboard/" class="hover:text-black transition-colors">اتصل بنا</a></li>
             <li>
-              <a href="#" class="hover:text-black transition-colors">الأسئلة الشائعة</a>
+              <a href="/ar/individuals/faqs/" class="hover:text-black transition-colors">الأسئلة الشائعة</a>
             </li>
           </ul>
         </div>
@@ -61,13 +61,13 @@
         <!-- Social Media Section -->
         <div class="hidden lg:flex -mx-20 mt-4">
           <div class="flex flex-row-reverse">
-            <a href="#">
+            <a href="https://www.instagram.com/hrdfksa/">
               <img src="../assets/pic/instaFooterIcon.png" />
             </a>
-            <a href="#" class="text-gray-500">
+            <a href="https://x.com/HRDFKSA?mx=2" class="text-gray-500">
               <img src="../assets/pic/twitterFotterIcon.png" />
             </a>
-            <a href="#" class="text-gray-500 hover:text-gray-700 my-1">
+            <a href="https://www.linkedin.com/company/hrdf/" class="text-gray-500 hover:text-gray-700 my-1">
               <img src="../assets/pic/linkedFooterIcon.png" />
             </a>
           </div>

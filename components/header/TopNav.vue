@@ -6,12 +6,12 @@
           id="right_side_links"
           class="hidden md:flex items-center space-x-6 space-x-reverse text-left text-xs font-medium whitespace-pre" style="font-family:'Tajawal', sans-serif"
         >
-          <a href="#" class=" hover:text-green-600">الصفحة الرئيسية</a>
-          <a href="#" class=" hover:text-green-600">التدريب الإلكتروني</a>
-          <a href="#" class=" hover:text-green-600">تحقق</a>
-          <a href="#" class=" hover:text-green-600">الأسئلة الشائعة</a>
-          <a href="#" class=" hover:text-green-600 ml-4">اتصل بنا</a>
-          <a href="#" class=" hover:text-green-600">دليل المستخدم</a>
+          <a href="/ar/" class=" hover:text-green-600">الصفحة الرئيسية</a>
+          <a href="/ar/individuals/about/" class=" hover:text-green-600">التدريب الإلكتروني</a>
+          <a href="/ar/individuals/check_certificate/" class=" hover:text-green-600">تحقق</a>
+          <a href="/ar/individuals/faqs/" class=" hover:text-green-600">الأسئلة الشائعة</a>
+          <a href="/ar/individuals/contact/" class=" hover:text-green-600 ml-4">اتصل بنا</a>
+          <a href="/static/media/user_manuals/indi_manual_n01AdYo.pdf" class=" hover:text-green-600">دليل المستخدم</a>
         </div>
 
         <div id="left_side_items" class="w-full md:w-auto flex">
@@ -22,20 +22,20 @@
                        bg-[#318720] hover:bg-[#45a049]
                        md:bg-[#4CAF50] md:hover:bg-[#45a049] md:-skew-x-40 md:pr-6"
               >
-               <div class="flex md:skew-x-40">
+               <a href="/ar/" class="flex md:skew-x-40">
                 <img class="h-4 w-4 ml-1 mt-1" src="../../assets/pic/person.png"/>
                 الافراد
-               </div>
+               </a>
               </button>
               <button
                 class="flex-1 md:flex-initial text-sm inline-flex items-center justify-center px-4
                        bg-[#1c3050] hover:bg-[#4CAF50]
                        md:bg-[#23395f] md:hover:bg-[#4CAF50] md:-skew-x-40 font-bold"
               >
-                <div class="flex md:skew-x-40">
+                <a href="/ar/employer/" class="flex md:skew-x-40">
                 <img class="h-4 w-4 ml-1" src="../../assets/pic/suitCase.png" />
                 المنشآت
-                </div>
+                </a>
               </button>
             </div>
           </div>

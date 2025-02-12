@@ -3,7 +3,7 @@
         <!-- Notification content goes here -->
         <p class="text-center">
             انضم معنا في الجلسة التدريبية بعنوان: "التمكين والإبداع في قطاع الترفيه" والتي ستقام يوم الإثنين بتاريخ 2025/02/03م الساعة 09:00 م
-            <a href="#" class="hover:text-black">
+            <a href="/ar/doroob_webinar/" class="hover:text-black">
                 <span class="px-2 m-3 font-bold text-sm">(اضغط هنا)</span>
             </a>
         </p>

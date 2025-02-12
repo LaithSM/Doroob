@@ -1,7 +1,7 @@
 <template>
   <div class="relative group">
     <a
-      href="#"
+      :href="item.title === 'دورات الشركاء' ? '#' : href"
       @click="setActive(index)"
       :class="{ 'bg-[#318720]': isActive }"
       class="block text-gray-700 hover:text-primary py-2 text-right"
@@ -23,15 +23,15 @@
       class="bg-white text-right"
       style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px"
     >
-      <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:text-[#277b9d]"
+      <a href="/ar/individuals/public/public_programs_list/" class="block px-4 py-2 text-sm text-gray-700 hover:text-[#277b9d]"
         >مسارات التدريب</a
       >
       <hr class="text-gray-200" />
-      <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:text-[#277b9d]"
+      <a href="/individuals/tawteen/tawteen_program_list/" class="block px-4 py-2 text-sm text-gray-700 hover:text-[#277b9d]"
         >مسارات التوطين</a
       >
       <hr class="text-gray-200" />
-      <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:text-[#277b9d]"
+      <a href="/ar/individuals/sector/sectors_program_list/" class="block px-4 py-2 text-sm text-gray-700 hover:text-[#277b9d]"
         >مسارات القطاعات</a
       >
       <hr class="text-gray-200" />
@@ -42,7 +42,7 @@
       class="bg-white text-right"
       style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px"
     >
-      <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:text-[#277b9d]"
+      <a href="/ar/mof/" class="block px-4 py-2 text-sm text-gray-700 hover:text-[#277b9d]"
         >وزارة مالية</a
       >
       <hr class="text-gray-200" />
@@ -59,6 +59,7 @@ const props = defineProps({
   index: Number,
   activeIndex: Number,
   setActive: Function,
+  href: String,
 });
 
 const isActive = ref(false);
