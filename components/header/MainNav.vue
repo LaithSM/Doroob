@@ -5,7 +5,9 @@
       <div class="flex justify-center h-18">
         <!-- Logo -->
         <div class="md:mr-0 lg:ml-2 xl:ml-22">
+        <a href="/ar/">
           <img src="/assets/pic/هدف_تدريب_bg_removed.png.png" alt="Logo" class="h-20" />
+        </a>
         </div>
 
         <!-- Desktop Menu -->
@@ -47,7 +49,7 @@
                 >مسارات التوطين</a
               >
               <a
-                href="/ar/individuals/sector/sectors_program_list/0"
+                href="/ar/individuals/sector/sectors_program_list/"
                 class="block px-4 py-2 text-sm text-gray-700 hover:text-[#277b9d]"
                 >مسارات القطاعات</a
               >
