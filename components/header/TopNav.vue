@@ -4,13 +4,13 @@
       <div class="flex justify-center items-center space-x-10 lg:px-20 lg:mr-80">
         <div
           id="right_side_links"
-          class="hidden md:flex items-center space-x-6 space-x-reverse text-left text-xs font-medium whitespace-pre" style="font-family:'Tajawal', sans-serif"
+          class="hidden md:flex items-center space-x-6 space-x-reverse text-left text-xs whitespace-pre"
         >
           <a href="/ar/" class=" hover:text-green-600">الصفحة الرئيسية</a>
-          <a href="/ar/individuals/about/" class=" hover:text-green-600">التدريب الإلكتروني</a>
+          <a href="/ar/individuals/about/" class=" hover:text-green-600">عن التدريب الإلكتروني</a>
           <a href="/ar/individuals/check_certificate/" class=" hover:text-green-600">تحقق</a>
           <a href="/ar/individuals/faqs/" class=" hover:text-green-600">الأسئلة الشائعة</a>
-          <a href="/ar/individuals/contact/" class=" hover:text-green-600 ml-4">اتصل بنا</a>
+          <a href="https://www.hrdf.org.sa/help-support/contact-us-dashboard/" class=" hover:text-green-600 ml-4">اتصل بنا</a>
           <a href="/static/media/user_manuals/indi_manual_n01AdYo.pdf" class=" hover:text-green-600">دليل المستخدم</a>
         </div>
 

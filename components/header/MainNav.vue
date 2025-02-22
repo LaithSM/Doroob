@@ -4,7 +4,7 @@
     <div class="container mx-auto h-auto">
       <div class="flex justify-center h-18">
         <!-- Logo -->
-        <div class="md:mr-0 lg:ml-2 xl:ml-22">
+        <div class="md:mr-0 lg:ml-2 xl:ml-12">
         <a href="/ar/">
           <img src="/assets/pic/هدف_تدريب_bg_removed.png.png" alt="Logo" class="h-20" />
         </a>
@@ -12,17 +12,17 @@
 
         <!-- Desktop Menu -->
 
-        <div class="hidden lg:hidden xl:flex items-center space-x-4">
+        <div class="hidden lg:hidden xl:flex items-center space-x-4 ml-15">
           <div
             v-for="(item, index) in menuItems"
             :key="index"
             class="relative group whitespace-nowrap"
           >
-            <div class="text-gray-700 hover:text-primary px-3 py-2">
+            <div class="text-gray-600 hover:text-primary px-3 py-2">
               <a  :href="item.href">
                 {{ item.title }}
                 <span
-                  v-if="!item.isNew"
+                  v-if="item.isNew"
                   class="mr-1 absolute top-4 text-[10px] font-medium text-red-500"
                   >جديد</span
                 >
@@ -32,7 +32,7 @@
               </a>
             </div>
             <div
-              class="hidden group-hover:block before:absolute before:top-10 before:left-4 before:right-3 before:h-1 before:bg-green-500"
+              class="hidden group-hover:block before:absolute before:top-10 before:left-4 before:right-3 before:h-1 before:bg-[#57ad46]"
             ></div>
             <div
               v-if="item.title === 'المسارات التدريبية'"
@@ -58,9 +58,9 @@
               v-if="item.title === 'الدورات التدريبية'"
               class="absolute right-3 top-9 mt-2 bg-white shadow-lg hidden group-hover:block z-20 gap-4 text-right w-[600px] mx-auto"
             >
-              <h2 class="text-green-500 p-4 font-semibold">التخصصات المتوفرة</h2>
-              <hr class="text-gray-400 font-light" />
-              <div class="grid grid-cols-3 p-4 text-xs">
+              <h2 class="text-[#57ad46] p-4 font-semibold">التخصصات المتوفرة</h2>
+              <hr class="text-gray-200" />
+              <div class="grid grid-cols-3 p-4 text-xs text-gray-500">
                 <!-- Column 1 -->
                 <div class="space-y-2">
                   <ul class="space-y-2">
@@ -129,7 +129,7 @@
           <!-- Dropdown for logged-in user -->
           <div v-if="isLoggedIn" class="relative inline-block">
             <div class="flex space-x-5 mr-20 items-center">
-              <BellIcon class="w-6 h-6 text-gray-600 fill-gray-600" />
+              <BellIcon class="w-6 h-6 text-gray-600 fill-gray-600" @click="isBellOpen = !isBellOpen" />
               <!-- Dropdown Button -->
               <button
                 @click="isOpen = !isOpen"
@@ -141,28 +141,36 @@
               </div>
               </button>
             </div>
-            <!-- Dropdown Menu -->
+            <!-- Bell Dropdown Menu -->
+            <div
+              v-if="isBellOpen && !user.verified"
+              class="absolute right-17 top-7 mt-2 w-55 bg-white rounded-lg shadow-lg border border-gray-200 p-2 z-20"
+            >
+              <ul class="text-right text-gray-700 space-y-2 mt-2">
+                <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer text-lg whitespace-nowrap">
+                  <p>لم يتم توثيق حسابك</p>  <p> <a href="" class="text-[#277b9d]"> اضغط هنا </a>  لتوثيق بريدك </p>الالكتروني
+                </li>
+              </ul>
+            </div>
+            <!-- User Dropdown Menu -->
             <div
               v-if="isOpen"
               class="absolute  left-0 mt-2 w-56 bg-white rounded-lg shadow-lg border border-gray-200 p-2 z-20"
             >
-              <div class="flex items-center justify-between p-2">
-                <span class="text-gray-700 font-medium">{{ user.menuItems[0].text }}</span>
-                <span
-                  v-if="!user.verified"
-                  class="bg-red-500 text-white text-xs px-2 py-1 rounded-full font-medium"
-                >
-                  غير موثق
-                </span>
-              </div>
               <ul class="text-right text-gray-700 space-y-2 mt-2">
                 <li
-                  v-for="item in user.menuItems.slice(1)"
+                  v-for="item in user.menuItems"
                   :key="item.id"
                   class="px-4 py-2 hover:bg-gray-100 cursor-pointer font-medium"
                   :class="item.class"
                 >
                   {{ item.text }}
+                  <span
+                  v-if="!user.verified && item.text === 'ملفي الشخصي'"
+                  class="bg-red-500 text-white text-xs px-2 py-1 rounded-full font-medium"
+                >
+                  غير موثق
+                </span>
                 </li>
               </ul>
             </div>
@@ -283,6 +291,7 @@ const activeIndex = ref(null);
 const activeSecondaryIndex = ref(null);
 
 const isOpen = ref(false);
+const isBellOpen = ref(false);
 
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value;
