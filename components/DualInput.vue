@@ -1,24 +1,26 @@
 <template>
   <div>
-    <div class="flex justify-between">
-      <label :class="labelClass1">{{ label1 }}</label>
-      <label :class="labelClass2">{{ label2 }}</label>
+    <div class="text-gray-600 text-sm font-medium mb-1">
+      <div class="flex justify-between">
+        <label :class="[defaultLabelClass, labelClass1]">{{ label1 }}</label>
+        <label :class="[defaultLabelClass, labelClass2]">{{ label2 }}</label>
+      </div>
     </div>
-    <div class="flex items-center gap-4">
+    <div class="flex bg-gray-50 rounded border border-gray-200">
       <input
         :type="type1"
         :value="modelValue1"
-        @input="$emit('update:modelValue1', $event.target.value)"
         :placeholder="placeholder1"
-        :class="inputClass1"
+        :class="[defaultInputClass, inputClass1]"
+        readonly
       />
-      <span class="border-l border-gray-300 h-full"></span>
+      <div class="w-[1px] bg-gray-300 my-2"></div>
       <input
         :type="type2"
         :value="modelValue2"
-        @input="$emit('update:modelValue2', $event.target.value)"
         :placeholder="placeholder2"
-        :class="inputClass2"
+        :class="[defaultInputClass, inputClass2]"
+        readonly
       />
     </div>
   </div>
@@ -43,19 +45,27 @@ export default {
     placeholder2: String,
     labelClass1: {
       type: String,
-      default: 'block text-gray-700 font-semibold mb-1'
+      default: ''
     },
     labelClass2: {
       type: String,
-      default: 'block text-gray-700 font-semibold mt-2'
+      default: ''
     },
     inputClass1: {
       type: String,
-      default: 'w-1/2 p-2 bg-[#EFF1EE] border-gray-300 rounded-xs text-sm'
+      default: ''
     },
     inputClass2: {
       type: String,
-      default: 'w-1/2 p-2 bg-[#EFF1EE] border-gray-300 rounded-xs text-sm'
+      default: ''
+    }
+  },
+  computed: {
+    defaultLabelClass() {
+      return 'text-gray-700 text-sm font-bold';
+    },
+    defaultInputClass() {
+      return 'p-2 bg-[#EFF1EE] border border-gray-200 text-gray-500 outline-none';
     }
   },
   emits: ['update:modelValue1', 'update:modelValue2']

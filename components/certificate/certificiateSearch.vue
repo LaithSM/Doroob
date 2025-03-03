@@ -25,8 +25,8 @@
             placeholder="الرمز"
              class="w-full pt-3 pb-3 p-2 border-2 border-gray-200 rounded-xs text-sm text-right text-gray-500"
           />
+      <div v-if="true" class="text-red-600">الرمز المدخل غير صحيح!</div>
         </div>
-  
         <div class="flex justify-center">
           <button
             type="submit"
