@@ -1,29 +1,30 @@
 <template>
-    <div v-if="showNotification" class="bg-[#277b9d] text-white p-5 text-lg flex justify-center font-sans">
+    <div class="bg-[#1B8354] text-white p-1.5">
         <!-- Notification content goes here -->
-        <p class="text-center">
-            انضم معنا في الجلسة التدريبية بعنوان: "التمكين والإبداع في قطاع الترفيه" والتي ستقام يوم الإثنين بتاريخ 2025/02/03م الساعة 09:00 م
-            <a href="/ar/doroob_webinar/" class="hover:text-black">
-                <span class="px-2 m-3 font-bold text-sm">(اضغط هنا)</span>
-            </a>
-        </p>
-        <button @click="closeNotification" class="absolute top-0 right-0 m-3 px-3 focus:outline-none text-2xl font-bold font-mono cursor-pointer hover:text-black"> 
-            x
-        </button>
+       <ul class="flex space-x-5 container mx-auto">
+         <li class="flex"><Calendar class="ml-1" /> {{ date }} </li>
+       <li class="flex space-x-1.5"><Clock4 class="ml-1"/>{{ time }}</li>
+       <li class="flex"><MapPin class="ml-1"/>{{location}}</li>
+       </ul>
+      
     </div>
 </template>
-<script setup>
-
-const props = defineProps({
-    showNotification: {
-        type: Boolean,
-        required: true
+<script>
+import { Calendar } from 'lucide-vue-next';
+import { Clock4 } from 'lucide-vue-next';
+import { MapPin } from 'lucide-vue-next';
+export default {
+    data() {
+        return {
+            location: 'رياض',
+            time: '2:30 مساء',
+            date: '3-سبتمبر-2024',
+        }
+    },
+    components: {
+        Calendar,
+        Clock4,
+        MapPin
     }
-});
-
-const emit = defineEmits();
-
-const closeNotification = () => {
-    emit('close');
-};
+}
 </script>
