@@ -201,13 +201,13 @@
           <div class="mt-8 space-y-2.5 text-sm">
             <button
               v-if="!isLoggedIn"
-              class="text-[#247190] w-full border border-gray-300 px-4 py-2 rounded-full"
+              class="text-green-700 w-full px-4 py-2 rounded-full"
             >
               تسجيل الدخول
             </button>
             <button
               v-if="!isLoggedIn"
-              class="text-[#247190] w-full border border-gray-300 px-4 py-2 rounded-full"
+              class="text-green-700 w-full  px-4 py-2 rounded-full"
             >
               إنشاء حساب
             </button>
@@ -346,7 +346,7 @@ const secondaryMenuItems = [
 const user = ref({
   name: "SIT", // Replace with dynamic API data
   verified: false, // Set true when user is verified
-  isAuthenticated: true, // Change to true when user logs in
+  isAuthenticated: false, // Change to true when user logs in
   menuItems: [
     { id: 1, text: "ملفي الشخصي" },
     { id: 2, text: "الدورات المسجل بها" },
