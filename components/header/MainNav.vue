@@ -159,9 +159,16 @@
                 الافراد
                 <ChevronDown />
               </div>
-              <div class="flex items-center space-x-1.5">
-                <BriefcaseBusiness class="w-6 h-6 text-gray-600" />
-                المنشآت
+              <div
+                :class="[
+                  'flex items-center space-x-1.5',
+                  $route.path === '/ar/individuals/about_company' ? 'bg-[#1B8354] rounded-md text-white font-bold p-6' : ''
+                ]"
+              >
+                <BriefcaseBusiness class="w-6 h-6 text-gray-600"  :class="[
+                  $route.path === '/ar/individuals/about_company' ? 'text-white' : ''
+                ]" />
+                <a href="about_company">المنشآت</a>
                 <ChevronDown />
               </div>
             </div>
