@@ -1,10 +1,10 @@
 <template>
   <nav class="bg-white shadow-md">
     <!-- Desktop Navigation -->
-    <div class="container mx-auto h-auto">
-      <div class="flex justify-between h-18">
+    <div class=" mx-auto h-auto">
+      <div class="flex justify-center items-center h-18">
         <!-- Logo -->
-        <div class="md:mr-0 lg:ml-2 xl:ml-12">
+        <div class="md:mr-0 lg:ml-2 xl:ml-12 flex justify-center items-center">
           <a href="/ar/">
             <img src="/assets/pic/هدف_تدريب_bg_removed.png.png" alt="Logo" class="h-20" />
           </a>
@@ -12,7 +12,7 @@
 
         <!-- Desktop Menu -->
 
-        <div class="hidden lg:hidden xl:flex items-center space-x-4">
+        <div class="hidden lg:hidden xl:flex items-center">
           <div
             v-for="(item, index) in menuItems"
             :key="index"
@@ -151,27 +151,33 @@
         </div>
 
         <!-- Auth Buttons -->
-        <div class="hidden lg:hidden xl:flex p-4 space-x-2 w-auto text-sm items-center">
+        <div class="hidden lg:hidden xl:flex w-auto items-center">
           <div class="relative inline-block">
-            <div class="flex space-x-5 mr-20 items-center">
-              <div class="flex items-center">
-                <UserRound class="w-6 h-6 text-gray-600" />
-                الافراد
-                <ChevronDown />
-              </div>
-              <div
-                :class="[
-                  'flex items-center space-x-1.5',
-                  $route.path === '/ar/individuals/about_company' ? 'bg-[#1B8354] rounded-md text-white font-bold p-6' : ''
-                ]"
+            <div class="flex items-center">
+              <a href="#" class="flex text-gray-800 space-x-2"
               >
-                <BriefcaseBusiness class="w-6 h-6 text-gray-600"  :class="[
+            <UserRound class="w-6 h-6 text-gray-600" />
+            <span class="text-sm font-medium">أفراد</span>
+          </a>
+          <a href="about_company" 
+          :class="[
+                  $route.path === '/ar/individuals/about_company' ? 'bg-[#1B8354] rounded-md text-white font-bold m-2' : ''
+                ]"
+          class="flex text-gray-800 p-6 space-x-2">
+            <BriefcaseBusiness class="w-6 h-6 text-gray-600"  :class="[
                   $route.path === '/ar/individuals/about_company' ? 'text-white' : ''
                 ]" />
-                <a href="about_company">المنشآت</a>
-                <ChevronDown />
-              </div>
-            </div>
+            <span class="text-sm font-medium">منشآت</span>
+          </a>
+          <a  v-if="!isLoggedIn" href="#" class="flex text-gray-800 hover:text-gray-600">
+            <SignupSvg  class="ml-1.5"/>
+            <span class="text-sm font-medium whitespace-nowrap">تسجيل الدخول</span>
+          </a>
+          <a  v-if="!isLoggedIn" href="#" class="flex text-gray-800 hover:text-gray-600 mr-6">
+           <LoginSvg class="ml-1.5"/>
+            <span class="text-sm font-medium whitespace-nowrap">إنشاء حساب</span>
+          </a>
+        </div>
             <div
               id="bell-dropdown"
               v-if="isBellOpen && !user.verified"
@@ -298,12 +304,10 @@
 <script setup>
 import { ref } from "vue";
 import MenuItem from "./MenuItem.vue";
-import { X } from "lucide-vue-next";
-import { Menu } from "lucide-vue-next";
-import { UserRound } from "lucide-vue-next";
-import { ChevronDown } from "lucide-vue-next";
-import { BriefcaseBusiness } from "lucide-vue-next";
+import { X, Menu, UserRound, BriefcaseBusiness } from "lucide-vue-next";
 import TitleBanner from "../header/TitleBanner";
+import SignupSvg from "./svgs/SignupSvg.vue";
+import LoginSvg from "./svgs/LoginSvg.vue";
 
 const isMenuOpen = ref(false);
 const activeIndex = ref(null);
